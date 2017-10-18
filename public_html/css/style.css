@@ -1,3 +1,50 @@
 body {
-    background-color: lightblue;
+    font-family: "free mono", "comics sans MS", arial, serif;
+    font-size: 30pt;
+    line-height:1.3em;
+    color: lightblue;
+    background-color: lightpink;
+    }
+    
+    <style>
+@import url('https://fonts.googleapis.com/css?family=PT+Serif');
+</style> 
+
+
+h1 {
+    font-family:"PT Serif", serif;
+    font-size: 230%;
+    text-align: center;
+    }
+    
+h2 {
+    font-family:font-family: "PT Serif", serif;
+    font-size: 140%;
+    text-align: center;
+    }
+
+.pochylony {
+    color: lime;
+    font-style: italic;
+    }
+    
+.pogrubiony {
+    color:lime;
+    font-weight:bold;
+    }
+
+.stopka {
+    color: red;
+    }
+
+li {
+    font:bold 75%/1.5 serif;
+    }
+
+.tekst1 {
+    color: #65E465;
+    }
+    
+.tekst2 {
+    color: #8D288D;
     }
