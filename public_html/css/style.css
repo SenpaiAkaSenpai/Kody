@@ -10,7 +10,6 @@ body {
 @import url('https://fonts.googleapis.com/css?family=PT+Serif');
 </style> 
 
-
 h1 {
     font-family:"PT Serif", serif;
     font-size: 230%;
@@ -48,3 +47,31 @@ li {
 .tekst2 {
     color: #8D288D;
     }
+    
+div#header {
+    border-color: red; 
+}
+
+img {
+    border: 5px solid black;
+}
+
+.header img {
+    border-color: 40px solid black;
+}
+
+#header {
+    padding-top: 50px;
+    border: 5px splid red;
+    margin: 15px;
+}
+
+.header {
+    padding: 20px;
+    border: 10px solid limegreen;
+    margin: 15px;
+    }
+    
+#header img {
+    border-color: lightblue;
+}
