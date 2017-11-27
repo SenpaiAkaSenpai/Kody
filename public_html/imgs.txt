@@ -1,0 +1,53 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-11-22T08:38:09+01:00
+
+<label for="liczba1">liczba 1</label>
+<input type="text" name="liczba1" id="liczba1">
+
+<br>dd
+
+<label for="liczba2">liczba 2</label>
+<input type="text" name="liczba2" id=liczba2>
+
+<br>
+dasfs
+<button onclick="oblicz();">oblicz</button>
+
+
+
+
+
+
+<label for="liczba1">liczba 1</label>
+<input type="text" name="liczba1" id="liczba1">
+
+<br>dd
+
+<label for="liczba2">liczba 2</label>
+<input type="text" name="liczba2" id=liczba2>
+
+<br>
+dasfs
+<button onclick="oblicz();">oblicz</button>
+
+
+
+
+
+
+<label for="liczba1">liczba 1</label>
+<input type="text" name="liczba1" id="liczba1">
+
+<br>dd
+
+<label for="liczba2">liczba 2</label>
+<input type="text" name="liczba2" id=liczba2>
+
+<br>
+dasfs
+<button onclick="oblicz();">oblicz</button>
+
+
+
+
