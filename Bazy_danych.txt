@@ -8,6 +8,23 @@ Created poniedziałek 22 styczeń 2018
 Kolumna, w terminologii baz danych nazywane są polem
 Rekord w tabeli, to zbiór pól w obrębie jednej tabeli 
 
-[[SQLiteStudio]] 
+SQLiteStudio 
 
-Niespójnością bazy danych
+Relacyjna baza danych  składa się z wielu tabeli połączonych relacjami 
+
+Silniki/systemy baz danych
+	- DB2
+	- MySQL
+	- Oracle
+	- PostgreSQL
+	- SQLite 
+
+Typy danych:
+	- liczbowe 
+		integer (liczby całkowite)
+		float lub real (liczby zmiennoprzecinkowe)
+
+Data i czas
+	Date- data, np. w formacie ISO (przykładowo 2015-01-16)
+
+	
