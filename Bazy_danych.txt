@@ -1,0 +1,13 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-01-22T09:08:03+01:00
+
+====== Bazy danych ======
+Created poniedziałek 22 styczeń 2018
+
+Kolumna, w terminologii baz danych nazywane są polem
+Rekord w tabeli, to zbiór pól w obrębie jednej tabeli 
+
+[[SQLiteStudio]] 
+
+Niespójnością bazy danych
