@@ -1,0 +1,31 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-01-31T07:30:29+01:00
+
+====== Architektura klient-serwer ======
+Created środa 31 styczeń 2018
+
+Serwer- "komputer" udostępniający zasoby
+	Jakie zasoby można udostępniać?
+		Udostępnia się usługi (ang. service)
+	1. **DNS**- Domain Name System, zamiana nazw hiostów na adresy IP, polecenie **ping**, port 53
+	2. **HTTP**- [[HyberText]] Transfer Protocol, port 20, 21
+	3. **FTP**- File Transfer Protocol, port 80
+	4. **SSH**- Secure Shell, port 22
+
+**Klient**- "komputer" korzystający z usłyug udostępnianych przez serwer
+**Protokół**- służy do porozumiewania się klienta i serwera 
+
+
+**SERWER HTTP**
+	Python -m simple html
+	
+
+**METODY HTTP**
+	GET- paramtetry przekazujemy po znaku zapytania.
+		Patametry przekazujemy jako: nazwa_parametru=wartosc, do łączenia parametrów używamy znaku **& **
+	
+	POST- służy do przesyłania informacji w sposób niejawny 
+	
+php -S localhost
+
