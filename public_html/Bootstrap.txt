@@ -16,3 +16,7 @@ Created środa 28 luty 2018
 
 Czym jest REM?
 	Jest to sposób definiowania rozmiarów obiektów w pliku, odnosząc się przy tym do rozmiaru "elementu-rodzica". Polega to na ustalaniu następnych rozmiarów na zasadzie proporcji do określonego obiektu.
+	
+	
+
+
