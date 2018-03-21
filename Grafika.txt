@@ -1,0 +1,16 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-03-19T09:04:22+01:00
+
+====== Grafika ======
+Created poniedziałek 19 marzec 2018
+
+**Modele kolorów**. czyli inaczej **systemy zapisu kolorów**
+
+G+B = Cyjan
+
+R+B = Magenta 
+
+R+G = Żółty
+
+**Grafika rastrowa **zapisuje w bardziej i mniej stratnych formatach. Najmniej stratnymi są bitmapa (.bmp), GIF (.gif), PNG (.png). Stratnymi  są  JPEG (.jpeg lub .jpg). Nie kompresują zas PSD (.psd) oraz XCF (.xcf)
