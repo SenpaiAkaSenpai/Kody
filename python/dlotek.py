@@ -10,11 +10,25 @@ def main(args):
     print("Wytypuj {} z {} liczb".format(ileliczb, maksliczba))
 
     liczby = []
-    for i in range(ileliczb):
+    i = 0
+    # for i in range(ileliczb):
+    while i < ileliczb:
         liczba = random.randint(1, maksliczba)
         if liczby.count(liczba) == 0:
             liczby.append(liczba)
-        print(liczba)
+            i += 1
+    print(liczby)
+
+    typy = set()
+    i = 0
+    while i < ileliczb:
+        typ = input("Podaj liczbę {} ".format(i + 1))
+        if typ not in typy:
+            typy.add(typ)
+            i += 1
+    print(typy)
+
+
     # print("Wylosowano:", liczba)
     # for i in range(3):
     #     odp = input("Podaj liczbę od 1 do 10: ")
