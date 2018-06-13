@@ -1,6 +1,3 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
-
 import sqlite3
 import csv
 
@@ -16,15 +13,17 @@ def dane_z_pliku(nazwa_pliku):
 
 
 def kwerenda_1(cur):
-    cur.execute("""SELECT name AS nazwa, genre AS gatunek FROM filmy""")
+    cur.execute("""
+        SELECT name AS nazwa, genre AS gatunek FROM fake_apps
+     """)
 
-    wyniki = cur.fetchall()
-    for row in wyniki:
-        print(tuple(row))
+    wyniki = cur.fetchall()  # pobranie wszystkich rekordów na raz
+    for row in wyniki:  # odczytanie rekordów
+        print(tuple(row))  # drukowanie pól
 
 
 def main(args):
-    con = sqlite3.connect('filmy.db')  # połączenie z bazą
+    con = sqlite3.connect('fake_apps.db')  # połączenie z bazą
     cur = con.cursor()  # utworzenie kursora
 
     # utworzenie tabeli w bazie
@@ -32,18 +31,16 @@ def main(args):
         cur.executescript(plik.read())
 
     # dodawanie danych do bazy
-    filmy = dane_z_pliku('filmy.txt')
-    filmy.pop(0)  # usuń pierwszy rekord z listy
-    cur.executemany('INSERT INTO filmy VALUES(?, ?, ?, ?, ?)', filmy)
+    fake_apps = dane_z_pliku('fake_apps.txt')
+    fake_apps.pop(0)  # usuń pierwszy rekord z listy
+    cur.executemany('INSERT INTO fake_apps VALUES(?, ?, ?, ?, ?)', fake_apps)
 
     # przykład zapytania (kwerendy)
-    kwerenda_1(cur)
-
-    con.commit()  # zatwierdzenie zmian w bazie
-    con.close()  # zamknięcie połączenia z bazą
+    con.commit()
+    con.close()
     return 0
 
 
 if __name__ == '__main__':
     import sys
-    sys.exit(main(sys.argv))
+sys.exit(main(sys.argv))
