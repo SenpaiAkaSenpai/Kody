@@ -2,8 +2,15 @@
 # -*- coding: utf-8 -*-
 
 def main(args):
-    a = input("Podaj liczbę: " )
-    print(math.pow(a, 1.0/123)) 
+    a = int(input("Podaj liczbę: " ))
+    print(a,)
+    b = int(input("Podaj liczbę: " ))
+    print(b) 
+    
+    print("Suma: ", a+b)
+    print("Różnica: ", a-b)
+    print("Iloczyn: ", a*b)
+    print("Iloraz: ", a/b)
     return 0
 
 if __name__ == '__main__':
