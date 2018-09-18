@@ -13,7 +13,7 @@ def main(args):
     b = int(input("Podaj długość drugiego boku: " ))
     print(b) 
     
-    print ("Pole trójkąta wynosi ", o(a, b), ", a jego obwód to ", p(a, b), ".", sep = "")
+    print ("Pole prostokąta wynosi ", o(a, b), ", a jego obwód to ", p(a, b), ".", sep = "")
     
     return 0
 
