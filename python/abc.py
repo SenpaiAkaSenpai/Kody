@@ -2,6 +2,14 @@
 # -*- coding: utf-8 -*-
 
 
+def maks(a, b, c):
+    maks = a
+    if b > maks:
+        maks = b
+    if c > maks:
+            maks = c
+    return maks
+
 def main(args):
     a = int(input("Podaj liczbę a: " ))
     print(a)
@@ -17,6 +25,17 @@ def main(args):
         print("Największa liczba to", b)
     else:
         print("Największa liczba to", c)
+
+
+    assert(maks(3, 2, 1) == 3)
+    assert(maks(2, 3, 1) == 3)
+    assert(maks(1, 2, 3) == 3)
+    assert(maks(1, 1, 3) == 3)
+    assert(maks(3, 1, 1) == 3)
+    assert(maks(1, 3, 1) == 3)
+    assert(maks(1, 3, 3) == 3)
+    assert(maks(3, 3, 1) == 3)
+    assert(maks(3, 3, 3) == 3)
 
 if __name__ == '__main__':
     import sys
