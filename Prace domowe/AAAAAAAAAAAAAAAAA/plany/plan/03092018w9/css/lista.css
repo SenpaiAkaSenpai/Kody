@@ -8,10 +8,10 @@ a:link{color:#000099}
 a:visited{color:#5377b6}
 a:hover{color:#000099;text-decoration:none}
 /* odnoœniki (lista rozwijalna) */
-a.pp:link,a.pp:visited {color:#000099;font-weight:bold}
+a.pp:link,a.pp:visited {color:#000099; font-weight:bold}
 a.pp:hover{text-decoration:none}
 /* element na liœcie */
-p.el{margin-top:0;margin-bottom:0.5em}
+p.el{margin-top:0;margin-bottom:0.5emss}
 /* logo szko³y 
  * efekt na obydwu stronach by³ zamierzony */
 .logo{text-align:center; padding: 20px; background-color: white; border-style: solid; margin-bottom:10px}
