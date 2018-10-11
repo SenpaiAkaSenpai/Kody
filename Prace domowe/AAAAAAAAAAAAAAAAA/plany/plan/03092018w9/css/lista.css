@@ -1,5 +1,5 @@
 body{
-	background-color:#bddfd0;
+	background-color:#aa0000;
 	color:#000000;
 	font:11px verdana,sans-serif;
 	margin:10}
@@ -12,5 +12,6 @@ a.pp:link,a.pp:visited {color:#000099;font-weight:bold}
 a.pp:hover{text-decoration:none}
 /* element na liœcie */
 p.el{margin-top:0;margin-bottom:0.5em}
-/* logo szko³y */
-.logo{text-align:center;margin-bottom:10px}
+/* logo szko³y 
+ * efekt na obydwu stronach by³ zamierzony */
+.logo{text-align:center; padding: 20px; background-color: white; border-style: solid; margin-bottom:10px}
