@@ -8,18 +8,18 @@ CREATE TABLE nazwiska (
 
 DROP TABLE IF EXISTS dane_osobowe;
 CREATE TABLE dane_osobowe (
-    Nr_ucz INTEGER PRIMARY KEY,
+    Nr_ucz INTEGER,
     Dzien TEXT NOT NULL,
     Miesiac TEXT NOT NULL,
     Rok TEXT NOT NULL,
     M_urodzenia TEXT,
     Wojewodztwo TEXT,
-    FOREIGN KEY (Nr_ucz) REFERENCES Nazwiska(Nr_ucz)
+    FOREIGN KEY (Nr_ucz) REFERENCES nazwiska(Nr_ucz)
 );
 
 DROP TABLE IF EXISTS oceny;
 CREATE TABLE oceny (
-    Nr_ucz INTEGER PRIMARY KEY,
+    Nr_ucz INTEGER,
     Zach TEXT DEFAULT '',
     Rel_Ety INTEGER DEFAULT '',
     Jpol INTEGER DEFAULT '',
@@ -36,5 +36,5 @@ CREATE TABLE oceny (
     Plas INTEGER DEFAULT '',
     PO INTEGER DEFAULT '',
     WF TEXT  '',
-    FOREIGN KEY (Nr_ucz) REFERENCES Nazwiska(Nr_ucz)
+    FOREIGN KEY (Nr_ucz) REFERENCES nazwiska(Nr_ucz)
 );
