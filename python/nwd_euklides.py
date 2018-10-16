@@ -5,13 +5,17 @@
 
 def nwd(a, b):
     
-        while a == b:
-            print(a)
-        return nwd
+    while a != b:
+        if a > b:
+            a = a - b
+        else:
+            b = b - a
+    return a
         
 def main(args):
-    
-    print(nwd(4, 190))
+    a = int(input("Pierwsza liczba: "))
+    b = int(input("Druga liczba: "))
+    print(nwd(a, b))
     
     return 0
 
