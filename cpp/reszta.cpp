@@ -13,17 +13,15 @@ void zamiana_liter(char tab[]) {
     int i = 0;
     
     while(tab[i] != '\0') {
+        int huhu = (int)tab[i];
         cout << int(tab[i] << " ";
-        if huhu >= 65 && huhu <= 90 {
-            int huhu = (int)tab[i];
-            int huhu = huhu + 32;
-            };
-        if huhu >= 97 && huhu <= 122 {
-            int huhu = (int)tab[i];
-            int huhu = huhu - 32
-        };
+        if (huhu >= 65 && huhu <= 90) 
+            int huhu += 32;
+        else if (huhu >= 97 && huhu <= 122) 
+            int huhu -= 32;
+            
+        cout << (char)huhu << " ";
         i++;
-
         };
     };
 
@@ -58,7 +56,7 @@ int main(int argc, char **argv)
     cin.getline(znaki, rozmiar);
     cout << "Cześć " << znaki << endl;
     //licz_znaki(znaki);
-    ascii(znaki);
-	
+    //ascii(znaki);
+    zamiana_liter(znaki);	
 	return 0;
 }
