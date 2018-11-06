@@ -7,24 +7,23 @@ int zlicz(char tb[]) {
     return i;
     }
 
-void wyswietl(char tekst[], int roz){
-    for(int i = 0; i < roz; i++){
-        cout << tekst[i];
-        }
-    }
+
     
 void anagram(char tb[], roz) {
-    for, pętla malejąca 
-    
+    for(int i = roz - 1; 1>= 0, 1--){
+    cout << tb[i];
     }
+}
      
     
 int main(int argc, char **argv){
     
     const int roz = 50;
     char tekst[roz];
+    cout << "xyz" << endl;
     cin.getline(tekst, 50);
     wyswietl(tekst, zlicz(tekst));
+    anagram(tekst, zlicz(tekst));
     
     return 0;
 }
