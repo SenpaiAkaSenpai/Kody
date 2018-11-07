@@ -30,11 +30,11 @@ int main(int argc, char **argv)
     char ilosc[liczba];
     cout << "tak" << endl;
     cin.getline(ilosc, liczba);
-    if (palindrom(ilosc, zlicz(ilosc)) == 1) {
+    if (palindrom(ilosc, zlicz(ilosc))) {
         cout << "tak";
         }
     else{
-        cout << "srak";
+        cout << "nie tak";
         }
     
     
