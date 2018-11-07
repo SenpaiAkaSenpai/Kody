@@ -7,21 +7,20 @@ int zlicz(char tb[]) {
     return i;
     }
     
-bool palindrom(char tb[],int i){
-        int pol = i/2;
-        int czypal = 0;
-        for (int j = 0; j >= pol; j++){
-            if (tb[i] == tb[i - 1 - j]){
-                bool czypal = true;
+bool palindrom(char tb[],int nom){
+        int pol = (nom - 1) /2;
+        int i = 0;
+        bool czypal = 1;
+        for (int j = nom - 1; j > pol; j--){
+            if (tb[j] == tb[i]){
+                i++;
                 
-                }
-            else {
-                bool czypal = false;
+            }else {
+                czypal = false;
                 break;
                 }
-            };
-    
-    
+            }
+        return czypal;
 };
 
 
@@ -31,7 +30,12 @@ int main(int argc, char **argv)
     char ilosc[liczba];
     cout << "tak" << endl;
     cin.getline(ilosc, liczba);
-    palindrom(char tb[], int i);
+    if (palindrom(ilosc, zlicz(ilosc)) == 1) {
+        cout << "tak";
+        }
+    else{
+        cout << "srak";
+        }
     
     
 	return 0;
