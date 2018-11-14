@@ -9,12 +9,22 @@
 #include <iostream>
 using namespace std;
 
+float horner_ir(int stopien, float tbwsp[], float x) {
+    
+    float wynik = tbwsp[0];
+    for (int i = 1; i < stopien + 1; i++){
+        wynik = wynik * x + tbwsp[i];
+    }
+    return wynik;
+    }
+
 void drukujw(int stopien, float tbwsp[]) {
     //2x^3 + 3x^2 + 5x + 4;
-    
-    for (int i = 0; i < stopien ; i--) {
-        cout << tbwsp[i] << " x^ " << i << " ";
+    int i = 0;
+    for (int i = 0; i < stopien ; i++) {
+        cout << tbwsp[i] << "x^" << stopien - i << " + ";
         }
+        cout << tbwsp[i];
     }
 
 int main(int argc, char **argv)
@@ -39,6 +49,7 @@ int main(int argc, char **argv)
     cout << "Wartość wielomianu o postaci: ";
     drukujw(stopien, tbwsp);
     cout << "\ndla x = " << x << " wynosi: ";
+    cout << horner_ir(stopien,tbwsp, x);
     cout << endl;
     
 
