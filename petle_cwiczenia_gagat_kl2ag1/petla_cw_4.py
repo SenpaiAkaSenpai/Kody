@@ -7,7 +7,7 @@ def main(args):
     b = int(input("Podaj liczbę: " ))
     
     if a > 1000000 or b > 1000000 * a:
-        print("nie zesraj sie")
+        print("podałeś za wysokie parametry, drogi użytkowniku")
     if a <= b:
         for liczba in range(a - 1, b + 1):
                 print(liczba, end=" ")
