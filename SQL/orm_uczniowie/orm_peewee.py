@@ -22,15 +22,24 @@ class Klasa(BazaModel):
 class Uczen(BazaModel):
     imie = CharField(null=False)
     nazwisko = CharField(null=False)
-    plec = BooleanField()
+    plec = IntegerField()
     klasa = ForeignKeyField(Klasa, related_name='uczniowie')
-
-class Wynik(BazaModel):
     egzhum = FloatField(default=0)
     egzmat = FloatField(default=0)
     egzjez = FloatField(default=0)
-    uczen = ForeignKeyField(Uczen, related_name='wyniki')
 
+class Przedmiot(BazaModel):
+    przedmiot = CharField(null=False)
+    imie_naucz = CharField(null=False)
+    nazwisko_naucz = CharField(null=False)
+    plec_naucz = IntegerField()
+    
+class Ocena(BazaModel):
+    datad = DateField()
+    uczen = ForeignKeyField(Uczen, related_name='oceny')
+    przedmiot = ForeignKeyField(Uczen, related_name='przedmiot')
+    ocena = FloatField(default=0)
+    
 def main(args):
     if os.path.exists(baza_plik):
         os.remove(baza_plik)
@@ -51,7 +60,7 @@ def main(args):
     
     uczniowie = Uczen.select()
     for uczen in uczniowie:
-        print uczen.id, uczen.nazwisko, uczen.klasa
+        print(uczen.id, uczen.nazwisko, uczen.klasa)
 
     return 0
 
