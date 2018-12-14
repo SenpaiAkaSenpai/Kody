@@ -1,10 +1,25 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 from flask import Flask
-from flask import render_template
+from flask import render_template, request
 app = Flask(__name__)
 
 print(__name__)
+
+@app.before_request
+def before_request():
+    g.db = baza
+    g.db.connect()
+    
+@app.after_request
+def after_request(response)
+    g.db.close()
+    return response
+    
+@app.route("/quiz")
+def quiz()
+    pytanai = Pytanie.select()
+    return render_template('quiz.html', query = pytania)
 
 @app.route("/")
 def hello():
