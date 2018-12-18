@@ -3,12 +3,12 @@
 
 def main(args):
     
-    a = int(input("Podaj liczbę: " ))
-
-    for liczba in range(0, a + 1):
-        print(liczba * liczba)
-        
-    return 0
+	a = int(input("Podaj końcową wartość zakresu: " ))
+	
+	for b in range(0, a + 1):
+		print(b * b)
+    
+	return 0
 
 if __name__ == '__main__':
     import sys

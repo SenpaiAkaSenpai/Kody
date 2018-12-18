@@ -3,10 +3,17 @@
 
 def main(args):
     
-    for liczba in range(10, 100):
-        if liczba % 6 == 0:
-            print(liczba, end=" ")
-        
+    a = int(input("Podaj liczbę: " )) 
+    b = int(input("Podaj liczbę: " ))
+    
+    if a > 1000000 or b > 1000000 * a:
+        print("podałeś za wysokie parametry, drogi użytkowniku")
+    if a <= b:
+        for liczba in range(a, b + 1):
+                print(liczba, end=" ")
+    else:
+         print("Ty bambaryło przebrzydła, wartość początkowa musi być mniejsza od wartości wyjścia, idź usuń system32 ")
+         
     return 0
 
 if __name__ == '__main__':
