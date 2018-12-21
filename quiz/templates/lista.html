@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8" />
+<title>skema</title>
+</head>
+
+<body>
+
+    <h1>Quiz</h1>
+    <h2>Pytania</h2>
+    {% for p in query %}
+    <p>
+        {{ p.id }} {{ p.pytanie}}
+    
+    </p>
+    {% endfor %}
+    
+</body>
+
+</html>
