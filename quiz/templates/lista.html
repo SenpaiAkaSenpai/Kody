@@ -1,14 +1,8 @@
-<!DOCTYPE html>
-<html lang="pl">
-<head>
-<meta charset="utf-8" />
-<title>skema</title>
-</head>
+{% extends "szablon.html" %}
+{% block tytul %}Quiz - lista pytań{% endblock %}
+{% block h1 %}Quiz- lista pytań{% endblock %}
 
-<body>
-
-    <h1>Quiz</h1>
-    <h2>Pytania</h2>
+{% block tresc %}
     {% for p in query %}
     <p>
         {{ p.id }} {{ p.pytanie}}

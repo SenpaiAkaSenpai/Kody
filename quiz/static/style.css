@@ -2,3 +2,27 @@ body {
     color: white;
     background-color: black;
 }
+
+#menu li {
+    display: inline; 
+}
+
+.info { 
+    color: blue;
+    font-weight: bold; 
+ }
+ 
+.hide1{
+display: none;
+}
+
+.hide2{
+    visibility: hidden;
+}
+
+.hide3{
+    position: absolute;
+    top: -1000px;
+    left: -1000px;
+    background-color: green;
+     }
