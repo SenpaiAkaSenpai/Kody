@@ -5,7 +5,7 @@ using namespace std;
 void loss(int uwu[], int n){
     srandom(time(NULL)); //inicjacja generatora liczb pseudolosowych
     for(int i = 0; i < n; i++){
-        uwu[i] = rand() % 101;
+        uwu[i] = rand() % 11;
     
     };
 }

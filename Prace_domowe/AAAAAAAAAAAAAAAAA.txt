@@ -1,0 +1,10 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2019-01-08T14:15:17+01:00
+
+====== AAAAAAAAAAAAAAAAA ======
+Created wtorek 08 stycznia 2019
+
+Złota myśl na dziś
+
+Iteracyjne >>> rekurencyjne
