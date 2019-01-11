@@ -4,6 +4,7 @@ from flask import Flask
 from flask import render_template, request
 from flask import redirect, url_for, flash
 from modele import *
+from forms import *
 
 app = Flask(__name__)
 
@@ -34,11 +35,12 @@ def quiz():
     pytania = Pytanie.select().join(Odpowiedz).distinct().order_by(Pytanie.id)
     return render_template('quiz.html', query = pytania)
 
-
-@app.route("/klasa")
-def klasa():
-    return render_template('klasa.html')
-
-
+@app.route("/dodaj", methods=['GET', 'POST'])
+def dodaj():
+    form = PytanieForm()
+    return render_template('dodaj.html', form = form)
+    
+    
+    
 if __name__ == '__main__':
     app.run(debug=True)
