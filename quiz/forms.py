@@ -4,12 +4,11 @@
 from flask_wtf import FlaskForm
 from wtforms import StringField, HiddenField, BooleanField
 from wtforms import SelectField, FormField, FieldList
-from wtforms.validators import Required
+from wtforms.validators import Required 
 
 blad1 = 'To pole jest wymagane!'
 
-
-class OdpForm(Flask_form):
+class OdpForm(FlaskForm):
     id = HiddenField("Odpowiedz id")
     pytanie = HiddenField("Pytanie id")
     odpowiedz = StringField('Odpowiedź:',

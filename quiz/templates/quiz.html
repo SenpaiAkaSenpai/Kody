@@ -1,6 +1,6 @@
 {% extends "szablon.html" %}
-{% block tytul %}Quiz - odpowiedz na pytania{% endblock %}
-{% block h1 %}Quiz - odpowiedz na pytania{% endblock %}
+{% block tytul %}Quiz – odpowiedz na pytania{% endblock %}
+{% block h1 %}Quiz – odpowiedz na pytania{% endblock %}
 
 {% block tresc %}
     <form method="POST">
@@ -15,13 +15,9 @@
         {{ o.odpowiedz }}
         <br>
         {% endfor %}
-        
+      
     </p>
     {% endfor %}
     <input type="submit" value="Zapisz odpowiedzi">
     </form>
-    {% endblock %}
-
-</body>
-
-</html>
+{% endblock %}
