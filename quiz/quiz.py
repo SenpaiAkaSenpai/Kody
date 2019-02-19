@@ -1,13 +1,13 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-
+ 
 from flask import g
 from modele import *
 from views import *
 
 # konfiguracja aplikacji
 app.config.update(dict(
-    SECRET_KEY='kurdeblaszka',
+    SECRET_KEY='kjlsdajhksdfjkhnjksdfkjsdcjkcszd',
 ))
 
 @app.before_request
