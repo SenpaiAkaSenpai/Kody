@@ -8,15 +8,12 @@ void szyfruj(char tb[], int klucz)
     int i = 0;
     int kod = 0;
     while(tb[i] != '\0') {
-        if (((int)tb[i] + klucz) > 26){
-            kod = (int)tb[i] + klucz - 26;
-            cout << (char)kod;
-        }
-        else{
             kod = (int)tb[i] + klucz;
-            cout << (char)kod;
-            }
-        i++;
+				if (kod > 122) {
+					kod = kod - 26;
+					}
+			cout << (char)kod;
+			i++;
         }
 }
 
