@@ -1,0 +1,28 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2019-03-20T07:20:22+01:00
+
+====== O internecie ======
+Created środa 20 marca 2019
+
+LAN - local area network
+komputer (desktop, laptop(eth, wifi)
+
+SWITH (przełącznik) - interfejsy wewnętrzne
+ROUTER (SWIH + ROUTER) - interfejs wewnętrzny i zewnętrzny (DSL, WAN)
+łączy sieci, routing (trasowanie)
+
+protokół HTTP
+ADRES URL 
+https://
+pl.wikipedia.org/
+wiki/Hypertext_Transfer_Protocol
+POST 
+protokół bezstanowy
+SESJE + COOKIES
+
+POP3S SSL port 995
+SMTP SSL port 495
+
+
+protokół ARP mapuje adresy  na adresy sprzętowe
